@@ -1,0 +1,15 @@
+{
+    "name": "pedrofpmonteiro/covid-19-api",
+    "description": "Laravel 7 PAckage to fecth the data from worldometers.info/coronavirus/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pedro Monteiro",
+            "email": "untraditional.dev@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^5.1"
+    }
+}
