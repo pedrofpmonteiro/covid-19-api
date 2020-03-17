@@ -4,7 +4,20 @@
 namespace pedrofpmonteiro\Covid19;
 
 
-class Covid19ServiceProvider
-{
+use Illuminate\Support\ServiceProvider;
 
+class Covid19ServiceProvider extends ServiceProvider
+{
+    /**
+     *
+     */
+    public function boot()
+    {
+
+    }
+
+    public function register()
+    {
+
+    }
 }

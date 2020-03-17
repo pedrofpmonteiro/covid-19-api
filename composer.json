@@ -1,15 +1,52 @@
 {
-    "name": "pedrofpmonteiro/covid-19-api",
-    "description": "Laravel 7 PAckage to fecth the data from worldometers.info/coronavirus/",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Pedro Monteiro",
-            "email": "untraditional.dev@gmail.com"
-        }
-    ],
-    "require": {},
-    "require-dev": {
-        "orchestra/testbench": "^5.1"
+  "name": "pedrofpmonteiro/covid19",
+  "description": "Laravel 7 PAckage to fecth the data from worldometers.info/coronavirus/",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "covid-19",
+    "coronavirus"
+  ],
+  "authors": [
+    {
+      "name": "Pedro Monteiro",
+      "email": "untraditional.dev@gmail.com"
     }
+  ],
+  "require": {
+    "ext-dom": "*",
+    "ext-libxml": "*",
+    "laravel/framework": "7.*",
+    "guzzlehttp/guzzle": "6.5.*"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "pedrofpmonteiro\\Covid19\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "pedrofpmonteiro\\Covid19\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover --ansi"
+    ],
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php artisan key:generate --ansi"
+    ]
+  },
+  "repositories": {
+    "dev-"
+  }
 }
