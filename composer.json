@@ -47,4 +47,10 @@
       "@php artisan key:generate --ansi"
     ]
   },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/pedrofpmonteiro/covid-19-api"
+    }
+  ]
 }
