@@ -47,7 +47,4 @@
       "@php artisan key:generate --ansi"
     ]
   },
-  "repositories": {
-    "dev-"
-  }
 }
